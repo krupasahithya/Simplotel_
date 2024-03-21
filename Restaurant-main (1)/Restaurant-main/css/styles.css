@@ -1,0 +1,157 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+/* nav bar styles start */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff6347;
+    color: white;
+}
+ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 20px 60px;
+}
+a{
+    text-decoration: none;
+}
+/* nav bar styles end */
+/* body part  starts */
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1 .card1{
+    width: 50%;
+}
+.container1 .row1{
+    padding: 30px;
+}
+.container1 .row1 h1,.row1 p{
+    margin:40px 20px;
+}
+.container1 button{
+    padding:5px 15px;
+    background-color: rgba(255, 119, 128, 0.685);
+    color: white;
+    border: none;
+    margin: 20px;
+}
+.card1 xyz{
+    height:417px;
+    width: 100%;
+}
+/* body parts end */
+/* another body part start */
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    padding: 40px;
+}
+.container2 .card2{
+    width: 50%;
+}
+.imgs{
+    display: flex;
+}
+.first{
+    width: 50%;
+    padding: 10px;
+}
+.card2 .box{
+    margin: 130px 0;
+    background-color: rgb(253, 126, 104);
+    color: black;
+    display: inline-block;
+    width: 50%;
+}
+.box h1, .box p{
+    margin: 10px;
+}
+#grid {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(248, 248, 187), rgb(253, 205, 213));
+    }
+/* another body part end */
+
+    /* nav bar mobile view start */
+    @media (max-width:576px) {
+        nav{
+            display: flex;
+            align-items: start;
+            background-color: #ff6347;
+            justify-content: start;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding:20px 0;
+        }
+        
+    }
+    /* nav bar mobile view end */
+    /* nav bar tablet view start */
+
+    @media (min-width:576px) and (max-width:992px) {
+        nav{
+            display: flex;
+            align-items: start;
+            background-color: #ff6347;
+            justify-content: start;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding:20px;
+        }
+        
+    }
+    /* nav bar tablet view end */
+    /* body part mobile view start */
+    @media(max-width:576px){
+        .container1 .card1{
+            width: 100%;
+        }
+    }
+    /* body part mobile  view end */
+    /* body part tablet  view start */
+
+    @media(min-width:576px) and (max-width:992px){
+        .container1 .card1{
+            width: 100%;
+        }
+    }
+    /* body part tablet  view end */
+    /* another body part mobile  view start */
+
+    @media(max-width:576px){
+        .container2 .card2{
+            width: 100%;
+        }
+    }
+    /* another body part mobile  view end */
+    /* anotherbody part tablet  view start */
+
+    @media(min-width:576px) and (max-width:992px){
+        .container2 .card2{
+            width: 100%;
+        }
+    }
+    /* another body part tablet  view end */
